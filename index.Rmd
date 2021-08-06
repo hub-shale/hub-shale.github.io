@@ -1,5 +1,5 @@
 ---
-title: "Git Website"
+title: "Data by Shale"
 description: |
   Welcome to Shale's Data Science Homepage - Take a look around!
 site: distill::distill_website

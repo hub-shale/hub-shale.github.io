@@ -1,0 +1,13 @@
+---
+title: "Projects"
+description: |
+  Check out some of the projects I've been working on!
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+## A place to take a look at some of the work I've been doing

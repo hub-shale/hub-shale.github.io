@@ -1,0 +1,12 @@
+name: "hub-shale.github.io"
+title: "Shale EDS"
+description: |
+  Git Website for Environmental Data Science
+output_dir: "docs"
+navbar:
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article

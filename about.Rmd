@@ -6,5 +6,14 @@ description: |
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+```
+
+
+## My Personal Trajectory:
+
+```{r}
+ggplot(data = cars, aes(x = dist, y = speed)) +
+  geom_line()
 ```
 

@@ -6,7 +6,7 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\nMy Personal Trajectory:\n\n\n\n\n\n\n",
-      "last_modified": "2021-08-06T11:10:02-07:00"
+      "last_modified": "2021-08-06T11:13:44-07:00"
     },
     {
       "path": "CV.html",
@@ -14,7 +14,7 @@
       "description": "Professional experience",
       "author": [],
       "contents": "\nR Markdown\nThis is for my resume.\n\n\n\n",
-      "last_modified": "2021-08-06T11:10:03-07:00"
+      "last_modified": "2021-08-06T11:13:45-07:00"
     },
     {
       "path": "index.html",
@@ -22,7 +22,7 @@
       "description": "Welcome to Shale's Data Science Homepage - Take a look around!\n",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-08-06T11:10:04-07:00"
+      "last_modified": "2021-08-06T11:13:45-07:00"
     },
     {
       "path": "projects.html",
@@ -30,7 +30,7 @@
       "description": "Check out some of the projects I've been working on!",
       "author": [],
       "contents": "\nR Markdown\nA place to take a look at some of the work I’ve been doing\n\n\n\n",
-      "last_modified": "2021-08-06T11:10:04-07:00"
+      "last_modified": "2021-08-06T11:13:46-07:00"
     }
   ],
   "collections": []

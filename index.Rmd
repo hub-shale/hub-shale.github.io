@@ -13,4 +13,4 @@ output:
 site: distill::distill_website
 ---
  
-Bio talk
+Shale is currently pursuing a Master's of Environmental Data Science at UCSB's Bren School of Environmental Science and Management. With a dual Bachelors in Biology-Psychology and Chinese from Tufts University, he has a diverse education background and a passion for interdisciplinary collaboration and communication. For the past few years, Shale has worked as a field technician collecting ecological data through the Bureau of Land Management's Assessment, Inventory, and Monitoring (AIM) protocols in New Mexico and Nevada, which has led to a professional background and interest in desert ecology and botany. Through Bren, Shale hopes to combine these interests with accumulated skills in data visualization and modeling to develop and share research-based solutions to ecological threats to the flora and fauna of deserts, including climate change, drought, invasive species, and human encroachment.

@@ -6,7 +6,14 @@
       "description": "Some additional details about myself and this website",
       "author": [],
       "contents": "\nLearn more about creating websites with Distill at: https://rstudio.github.io/distill/website.html\nLearn more about publishing to GitHub Pages at: https://rstudio.github.io/distill/publish_website.html#github-pages\nMy Personal Trajectory:\n\n\n\n\n\n\n",
-      "last_modified": "2021-08-06T14:50:01-07:00"
+      "last_modified": "2021-08-10T10:38:00-07:00"
+    },
+    {
+      "path": "blog.html",
+      "title": "Blog",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-08-10T10:38:01-07:00"
     },
     {
       "path": "CV.html",
@@ -14,14 +21,14 @@
       "description": "Professional experience",
       "author": [],
       "contents": "\nR Markdown\nThis is for my resume.\n\n\n\n",
-      "last_modified": "2021-08-06T14:50:02-07:00"
+      "last_modified": "2021-08-10T10:38:02-07:00"
     },
     {
       "path": "index.html",
       "title": "Shale Hunter",
       "author": [],
-      "contents": "\n\n          \n          \n          Shale EDS\n          Home\n          About\n          Projects\n          CV\n          \n          \n          ☰\n          \n          \n      \n        \n          \n            Shale Hunter\n          \n          \n            \n              Bio talk\n            \n            \n              Bio talk\n            \n          \n\n          \n            \n              \n                  \n                    \n                      LinkedIn\n                    \n                  \n                \n                                \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    LinkedIn\n                  \n                \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2021-08-06T14:50:02-07:00"
+      "contents": "\n\n          \n          \n          Shale EDS\n          Home\n          About\n          Projects\n          CV\n          Blog\n          \n          \n          ☰\n          \n          \n      \n        \n          \n            Shale Hunter\n          \n          \n            \n              Shale is currently pursuing a Master’s of Environmental Data Science at UCSB’s Bren School of Environmental Science and Management. With a dual Bachelors in Biology-Psychology and Chinese from Tufts University, he has a diverse education background and a passion for interdisciplinary collaboration and communication. For the past few years, Shale has worked as a field technician collecting ecological data through the Bureau of Land Management’s Assessment, Inventory, and Monitoring (AIM) protocols in New Mexico and Nevada, which has led to a professional background and interest in desert ecology and botany. Through Bren, Shale hopes to combine these interests with accumulated skills in data visualization and modeling to develop and share research-based solutions to ecological threats to the flora and fauna of deserts, including climate change, drought, invasive species, and human encroachment.\n            \n            \n              Shale is currently pursuing a Master’s of Environmental Data Science at UCSB’s Bren School of Environmental Science and Management. With a dual Bachelors in Biology-Psychology and Chinese from Tufts University, he has a diverse education background and a passion for interdisciplinary collaboration and communication. For the past few years, Shale has worked as a field technician collecting ecological data through the Bureau of Land Management’s Assessment, Inventory, and Monitoring (AIM) protocols in New Mexico and Nevada, which has led to a professional background and interest in desert ecology and botany. Through Bren, Shale hopes to combine these interests with accumulated skills in data visualization and modeling to develop and share research-based solutions to ecological threats to the flora and fauna of deserts, including climate change, drought, invasive species, and human encroachment.\n            \n          \n\n          \n            \n              \n                  \n                    \n                      LinkedIn\n                    \n                  \n                \n                                \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    LinkedIn\n                  \n                \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2021-08-10T10:38:02-07:00"
     },
     {
       "path": "projects.html",
@@ -29,8 +36,8 @@
       "description": "Check out some of the projects I've been working on!",
       "author": [],
       "contents": "\nR Markdown\nA place to take a look at some of the work I’ve been doing\n\n\n\n",
-      "last_modified": "2021-08-06T14:50:03-07:00"
+      "last_modified": "2021-08-10T10:38:03-07:00"
     }
   ],
-  "collections": []
+  "collections": ["posts/posts.json"]
 }

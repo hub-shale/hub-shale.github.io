@@ -1,0 +1,19 @@
+[
+  {
+    "path": "posts/2021-08-10-hello/",
+    "title": "Hello, World!",
+    "description": "A short introduction to blogging in Git.",
+    "author": [
+      {
+        "name": "Shale Hunter",
+        "url": {}
+      }
+    ],
+    "date": "2021-08-10",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n\n\n\n",
+    "preview": "posts/2021-08-10-hello/20210214_150314.jpg",
+    "last_modified": "2021-08-10T10:43:45-07:00",
+    "input_file": "hello.knit.md"
+  }
+]

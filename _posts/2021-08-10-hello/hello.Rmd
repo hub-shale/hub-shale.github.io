@@ -1,0 +1,24 @@
+---
+title: "Calculus for Dummies"
+description: |
+  A short introduction to deSolve::ode()
+author:
+  - name: Shale Hunter
+date: 08-10-2021
+output:
+  distill::distill_article:
+    self_contained: false
+preview: 20210214_150314.jpg
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(distill)
+library(deSolve)
+library(tidyverse)
+```
+
+# The Big Bad Math Monster
+
+As I begin my Master's in Environmental Data Science, I am both relieved and 

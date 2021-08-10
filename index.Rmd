@@ -3,7 +3,7 @@ title: "Shale Hunter"
 image: "NZ.jpeg"
 links:
   - label: LinkedIn
-    url: "https://linkedin.com/"
+    url: "www.linkedin.com/in/shale-hunter-18237760"
   - label: GitHub
     url: "https://github.com/hub-shale"
   - label: Email

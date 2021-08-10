@@ -1,8 +1,8 @@
 [
   {
     "path": "posts/2021-08-10-hello/",
-    "title": "Hello, World!",
-    "description": "A short introduction to blogging in Git.",
+    "title": "Calculus for Dummies",
+    "description": "A short introduction to deSolve::ode()",
     "author": [
       {
         "name": "Shale Hunter",
@@ -11,9 +11,9 @@
     ],
     "date": "2021-08-10",
     "categories": [],
-    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n\n\n\n",
+    "contents": "\nThe Big Bad Math Monster\nAs I begin my Master’s in Environmental Data Science, I am both relieved and somewhat surprised to find that something like 23 of my 25 classmates are just as out of practice (read: afraid) of the amount of math we will need to recall from the dusty annals of high school as I am. I haven’t taken calculus in something like 7 years, and personally I never saw much similarity between calculus and riding a bike. Add to this the fact that the MEDS intensive summer program aims to teach a 2 credit course covering all the basics of math required for our degree in the span of 5 days, including all of calculus in 1.5 days, and everyone but the mathlete lifers will understand my trepidation.\nR to the Rescue\nMy saving grace during the time-warp of numbers and variables that was last week was the fact that I am, despite all appearances, not actually here to learn math. Instead, I am learning Data Science, which is a fancy way of saying that I get a computer to do all the scary math for me. A smattering of experience in R from my time as an undergrad at Tufts University has been just enough to keep me abreast of the tsunami of information that will continue to be my summer. Though I am gaining familiarity with Python, most of our time in class is spent in RStudio learning how (in my eyes) to return to my blissful math-free youth while inexplicably pursuing a career in Data Science. And that brings us to the ode() function in the deSolve package.\ndeSolve\ndeSolve\n\n\n\n",
     "preview": "posts/2021-08-10-hello/20210214_150314.jpg",
-    "last_modified": "2021-08-10T10:43:45-07:00",
+    "last_modified": "2021-08-10T11:12:33-07:00",
     "input_file": "hello.knit.md"
   }
 ]

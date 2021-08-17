@@ -8,7 +8,7 @@ date: 08-10-2021
 output:
   distill::distill_article:
     self_contained: false
-preview: 20210214_150314.jpg
+preview: palmerpenguins_hex.jpg
 ---
 
 
@@ -31,7 +31,11 @@ library(tidyverse)
   
 # `deSolve`
 
-`deSolve`
+`deSolve` is a handy package created by Thomas Petzoldt, Karline Soetaert, Rhyne Setzer, and others with the intended (and achieved) purpose of ordinary differential equations, partial differential equations, differential algebraic equations, and delay differential equations. A reader who knows what all of those things are is probably not very impressed with this functionality, but for anyone out there (like myself) who has perhaps never heard of a delay differential equation, this package has the potential to save months of confused Googling and the ever-present danger of a miswritten calculation - or at least will save the pride you would otherwise be swallowing to request the help of that one friend who inexplicably does this stuff for fun.
+
+# `ode()`
+
+Without getting too deep into the weeds, I'd like to take the time to cover the simplest of `deSolve`'s functions, `ode()`.
 
 
 

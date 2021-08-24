@@ -11,5 +11,5 @@ library(tidyverse)
 
 ## R Markdown
 
-This is for my resume.
+This is for my resume/CV.
 Update by Friday.

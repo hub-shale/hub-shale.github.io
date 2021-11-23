@@ -1,0 +1,91 @@
+---
+title: "Grade Bias Analysis"
+author: "Shale Hunter"
+date: "11/20/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(here)
+library(gt)
+library(tufte)
+library(feasts)
+library(janitor)
+```
+
+# Statistical analysis of grading biases
+
+## Introduction
+
+The basic idea for this little project came to me when I was grading essays a few months ago for the class I am Taing this fall: as I methodically plodded through page after page of 
+
+## Tidying the data
+
+```{r}
+# read in the raw data
+data_raw = read_csv("grades_raw_TEST.csv", na = "-")
+ta_groups = read_csv("ta_id.csv")
+```
+
+```{r}
+# add TA info to grades data
+tas = ta_groups %>% 
+  clean_names() %>% 
+  separate(col = groups,
+           into = c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j"), sep = "\\s") %>% 
+  unite(col = ta, c("a", "b", "j")) %>% 
+  select(perm_number, ta)
+
+data_raw = data_raw %>% 
+  clean_names() %>% 
+  full_join(tas, by = "perm_number")
+
+data_raw$last_name[data_raw$first_name=="Ashton"] = "Wong.np"
+
+# clean data for functionality and student's privacy
+data_clean = data_raw %>% 
+  mutate(participation_pct = round((sections_total_real / 600) * 100, 2),
+         quizzes_pct = round((quizzes_total_real / 98) * 100, 2)) %>% # accurate as of 11/20
+  rename(essay = assignment_essay_1_serious_game_real,
+         proposal = assignment_game_proposal_real) %>% 
+  mutate(name = str_c(substr(first_name, 1, 1), last_name, sep = " ")) %>% 
+  select(name, pronouns, ta,
+         essay, proposal, quizzes_pct, participation_pct) %>% 
+  drop_na(essay)
+```
+
+Now I will export the cleaned dataset for anyone who wants to recreate the results of my actual statistical analysis with data that maintains the privacy of my students.
+
+```{r}
+write_csv(data_clean, "grading_bias_data_clean.csv")
+```
+
+
+## Autocorrelation
+
+The goal of this analysis is to see if the team of Teaching Assistants (myself included) has been grading in a biased way. Specifically, because we/I graded the essay assignment in alphabetical order, it is possible to track if I graded a student's essay "in response" to the previous student's essay instead of based on the essay's individual merit. Hypothetically, this could take two forms: 1) differential grading, in which an essay is graded higher than it ought to be because the essay before was of particularly poor quality, or and essay is graded lower than it ought to be because the essay before was of particularly high quality. Or 2) uniform grading, in which an essay is graded higher/lower than it ought to be because it isn't all that different from the previous essay, and takes on a grade similar/identical to that of the previous essay. The null hypothesis here is that there is no effect by the previous essay's grade on the current essay, and therefore no grading bias (yay!).
+
+To test this, we can use the `acf()` function, which
+
+```{r}
+acf()
+```
+
+
+## Gender Bias
+
+Beyond my initial curiosity regarding the possibility of an autocorrelation bias my grading, I was also recently reminded of the potential of gender bias in grading. So this next section will take a look at the subsection of students who have reported gender information on the class portal in order to identify a possible systemic devaluation of academic work based on gender. I will approach this in two parts, first by performing a linear regression using the categorical variable of gender with three levels (male, female, non-binary) and then again as a two-level or binary categorical (male, non-male).
+
+For this test, we first need to restrict our observations to only those students who have provided pronouns:
+
+```{r}
+data_gendered = data_clean %>% 
+  filter(pronouns != "")
+```
+
+
+
+

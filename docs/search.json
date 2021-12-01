@@ -5,7 +5,7 @@
       "title": "Blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-08-24T23:40:32+00:00"
+      "last_modified": "2021-12-01T14:46:46-08:00"
     },
     {
       "path": "CV.html",
@@ -13,14 +13,14 @@
       "description": "Professional experience",
       "author": [],
       "contents": "\nR Markdown\nThis is for my resume/CV. Update by Friday.\n\n\n\n",
-      "last_modified": "2021-08-24T23:40:33+00:00"
+      "last_modified": "2021-12-01T14:46:48-08:00"
     },
     {
       "path": "index.html",
       "title": "Shale Hunter",
       "author": [],
       "contents": "\n\n          \n          \n          Shale EDS\n          Home\n          Projects\n          CV\n          Blog\n          \n          \n          ☰\n          \n          \n      \n        \n          \n            Shale Hunter\n          \n          \n            \n              For nearly a decade Shale has made the natural world a personal, academic, and occupational priority, which today means the pursuit of a Master’s of Environmental Data Science at UCSB’s Bren School of Environmental Science and Management. A summer in high school working on the film crew of the climate change documentary Our Place on Earth launched his pursuit of an environment-centered career. With a dual Bachelors in Biology-Psychology and Chinese from Tufts University, he has a diverse educational background and a passion for interdisciplinary collaboration and communication. For the past two years, Shale has worked as a field technician collecting ecological data through the Bureau of Land Management’s Assessment, Inventory, and Monitoring (AIM) protocols in New Mexico and Nevada, which has led to a professional background and interest in desert ecology and botany. Through Bren, Shale hopes to combine these interests with accumulated skills in data visualization and modeling to develop and share research-based solutions to ecological threats such as climate change, drought, invasive species, and human encroachment.\n              \n            \n            \n              For nearly a decade Shale has made the natural world a personal, academic, and occupational priority, which today means the pursuit of a Master’s of Environmental Data Science at UCSB’s Bren School of Environmental Science and Management. A summer in high school working on the film crew of the climate change documentary Our Place on Earth launched his pursuit of an environment-centered career. With a dual Bachelors in Biology-Psychology and Chinese from Tufts University, he has a diverse educational background and a passion for interdisciplinary collaboration and communication. For the past two years, Shale has worked as a field technician collecting ecological data through the Bureau of Land Management’s Assessment, Inventory, and Monitoring (AIM) protocols in New Mexico and Nevada, which has led to a professional background and interest in desert ecology and botany. Through Bren, Shale hopes to combine these interests with accumulated skills in data visualization and modeling to develop and share research-based solutions to ecological threats such as climate change, drought, invasive species, and human encroachment.\n              \n            \n          \n\n          \n            \n              \n                  \n                    \n                      LinkedIn\n                    \n                  \n                \n                                \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    LinkedIn\n                  \n                \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2021-08-24T23:40:33+00:00"
+      "last_modified": "2021-12-01T14:46:49-08:00"
     },
     {
       "path": "projects.html",
@@ -28,7 +28,7 @@
       "description": "Check out some of the projects I've been working on!",
       "author": [],
       "contents": "\nR Markdown\nA place to take a look at some of the work I’ve been doing\n\n\n\n",
-      "last_modified": "2021-08-24T23:40:34+00:00"
+      "last_modified": "2021-12-01T14:46:49-08:00"
     }
   ],
   "collections": ["posts/posts.json"]

@@ -1,13 +1,13 @@
 ---
 title: "Projects"
 description: |
-  Check out some of the projects I've been working on!
+  Some half-baked ideas that I could use your help reanimating
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Aka the Python Graveyard
 
-## A place to take a look at some of the work I've been doing
+ 

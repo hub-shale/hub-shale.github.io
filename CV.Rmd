@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
 
-## R Markdown
+## Joke's on you - its a [resume!](Shale_Resume_nov1.pdf)
 
-This is for my resume/CV.
-Update by Friday.
+If you  want to know what I've actually been up to, check out my [blog](blog.html) for some small writeups on finished work, or my [projects](projects.html) page to get a sneak peek at some incomplete junk (if you see something you think you could help with, let me know!)
+

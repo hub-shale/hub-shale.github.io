@@ -94,10 +94,10 @@ ggarrange(essays, pronoun, quiz, log_quizzes,
 
 The goal of this analysis is to see if the team of Teaching Assistants (myself included) has been grading in a biased way. Specifically, because we/I graded the essay assignment in alphabetical order, it is possible to track if I graded a student's essay "in response" to the previous student's essay instead of based on the essay's individual merit. Hypothetically, this could take two forms: 1) differential grading, in which an essay is graded higher than it ought to be because the essay before was of particularly poor quality, or and essay is graded lower than it ought to be because the essay before was of particularly high quality. Or 2) uniform grading, in which an essay is graded higher/lower than it ought to be because it isn't all that different from the previous essay, and takes on a grade similar/identical to that of the previous essay. The null hypothesis here is that there is no effect by the previous essay's grade on the current essay, and therefore no grading bias (yay!).
 
-To test this, we can use the `acf()` function, which compares each essay grade to each of the previous essay grades in `data_clean` up to `lag.max`. In this first example, we simply use a lag of 2 to compare each essay to the one immediately preceding it (calling a lag of 1 to the `acf()` function would only compare each value to itself, which of course will show perfect correlation).
+To test this, we can use the `acf()` function, which compares each essay grade to each of the previous essay grades in `data_clean` up to `lag.max`. In this first example, we simply use a lag of 1 to compare each essay to the one immediately preceding it.
 
 ```{r, out.width='50%', fig.cap="ACF plot with a lag of 1, no significant results."}
-bias_acf = acf(data_clean$essay, lag.max = 2)
+bias_acf = acf(data_clean$essay, lag.max = 1)
 ```
 
 As the autocorrelation plot above shows, there is no relationship between an essay's grade and its predecessor (as we would hope to see!). The dotted blue lines show the cutoff for statistical significance at a 95% confidence interval: because the autocorrelation value at lag = 1 is between 0 and the blue line (`r bias_acf$acf[2]` to be precise), it is statistically insignificant.

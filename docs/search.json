@@ -5,30 +5,30 @@
       "title": "Blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-12-02T21:16:06-08:00"
+      "last_modified": "2021-12-02T22:16:06-07:00"
     },
     {
       "path": "CV.html",
       "title": "CV",
-      "description": "Professional experience",
+      "description": "Professional Experience",
       "author": [],
-      "contents": "\nJoke’s on you - its a resume!\nIf you want to know what I’ve actually been up to, check out my blog for some small writeups on finished work, or my projects page to get a sneak peek at some incomplete junk (if you see something you think you could help with, let me know!)\n\n\n\n",
-      "last_modified": "2021-12-02T21:16:09-08:00"
+      "contents": "\nJoke’s on you - its a resume!\nIf you want to know what I’ve actually been up to, check out my blog for some small writeups on finished work, or my projects page to take a look at some more informal coding projects.\n\n\n\n",
+      "last_modified": "2021-12-28T15:19:07-07:00"
     },
     {
       "path": "index.html",
       "title": "Shale Hunter",
       "author": [],
       "contents": "\n\n          \n          \n          Shale EDS\n          Home\n          Projects\n          CV\n          Blog\n          \n          \n          ☰\n          \n          \n      \n        \n          \n            Shale Hunter\n          \n          \n            \n              For nearly a decade Shale has made the natural world a personal, academic, and occupational priority, which today means the pursuit of a Master’s of Environmental Data Science at UCSB’s Bren School of Environmental Science and Management. A summer in high school working on the film crew of the climate change documentary Our Place on Earth launched his pursuit of an environment-centered career. With a dual Bachelors in Biology-Psychology and Chinese from Tufts University, he has a diverse educational background and a passion for interdisciplinary collaboration and communication. For the past two years, Shale has worked as a field technician collecting ecological data through the Bureau of Land Management’s Assessment, Inventory, and Monitoring (AIM) protocols in New Mexico and Nevada, which has led to a professional background and interest in desert ecology and botany. Through Bren, Shale hopes to combine these interests with accumulated skills in data visualization and modeling to develop and share research-based solutions to ecological threats such as climate change, drought, invasive species, and human encroachment.\n              \n            \n            \n              For nearly a decade Shale has made the natural world a personal, academic, and occupational priority, which today means the pursuit of a Master’s of Environmental Data Science at UCSB’s Bren School of Environmental Science and Management. A summer in high school working on the film crew of the climate change documentary Our Place on Earth launched his pursuit of an environment-centered career. With a dual Bachelors in Biology-Psychology and Chinese from Tufts University, he has a diverse educational background and a passion for interdisciplinary collaboration and communication. For the past two years, Shale has worked as a field technician collecting ecological data through the Bureau of Land Management’s Assessment, Inventory, and Monitoring (AIM) protocols in New Mexico and Nevada, which has led to a professional background and interest in desert ecology and botany. Through Bren, Shale hopes to combine these interests with accumulated skills in data visualization and modeling to develop and share research-based solutions to ecological threats such as climate change, drought, invasive species, and human encroachment.\n              \n            \n          \n\n          \n            \n              \n                  \n                    \n                      LinkedIn\n                    \n                  \n                \n                                \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    LinkedIn\n                  \n                \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2021-12-02T21:16:09-08:00"
+      "last_modified": "2021-12-02T22:16:09-07:00"
     },
     {
       "path": "projects.html",
       "title": "Projects",
-      "description": "Some half-baked ideas that I could use your help reanimating",
+      "description": "A place to informally share fun projects",
       "author": [],
-      "contents": "\nAka the Python Graveyard\n\n\n\n",
-      "last_modified": "2021-12-02T21:16:10-08:00"
+      "contents": "\nPython\nWind siting in Iowa (December 2021)\nWhale habitat vs shipping lanes in Dominica (November 2021)\n\n\n\n",
+      "last_modified": "2021-12-28T15:22:44-07:00"
     }
   ],
   "collections": ["posts/posts.json"]

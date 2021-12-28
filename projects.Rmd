@@ -1,13 +1,17 @@
 ---
 title: "Projects"
 description: |
-  Some half-baked ideas that I could use your help reanimating
+  A place to informally share fun projects
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Aka the Python Graveyard
+## Python
+
+[Wind](wind_siting.html) siting in Iowa (December 2021)
+
+[Whale](whale_sightings_21.html) habitat vs shipping lanes in Dominica (November 2021)
 
  

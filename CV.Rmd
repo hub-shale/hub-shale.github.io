@@ -1,7 +1,7 @@
 ---
 title: "CV"
 description: |
-  Professional experience
+  Professional Experience
 ---
 
 ```{r setup, include=FALSE}
@@ -11,5 +11,5 @@ library(tidyverse)
 
 ## Joke's on you - its a [resume!](Shale_Resume_nov1.pdf)
 
-If you  want to know what I've actually been up to, check out my [blog](blog.html) for some small writeups on finished work, or my [projects](projects.html) page to get a sneak peek at some incomplete junk (if you see something you think you could help with, let me know!)
+If you  want to know what I've actually been up to, check out my [blog](blog.html) for some small writeups on finished work, or my [projects](projects.html) page to take a look at some more informal coding projects.
 

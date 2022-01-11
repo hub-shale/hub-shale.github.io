@@ -12,6 +12,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 [Wind](wind_siting.html) siting in Iowa (December 2021)
 
-[Whale](whale_sightings_21.html) habitat vs shipping lanes in Dominica (November 2021)
+[Whale](whale_sightings.html) habitat vs shipping lanes in Dominica (November 2021)
 
  

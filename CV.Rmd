@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
 
-## Joke's on you - its a [resume!](Shale_Resume_nov1.pdf)
+## Joke's on you - its a [resume!](Shale_Resume_mar.pdf)
 
 If you  want to know what I've actually been up to, check out my [blog](blog.html) for some small writeups on finished work, or my [projects](projects.html) page to take a look at some more informal coding projects.
 

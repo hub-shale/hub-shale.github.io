@@ -15,22 +15,5 @@
     "preview": "posts/2021-12-01-grade-bias-analysis/grade_bias_analysis_files/figure-html5/unnamed-chunk-3-1.png",
     "last_modified": "2021-12-02T21:15:37-08:00",
     "input_file": {}
-  },
-  {
-    "path": "posts/2021-08-10-hello/",
-    "title": "Calculus for Dummies",
-    "description": "A short introduction to deSolve::ode()",
-    "author": [
-      {
-        "name": "Shale Hunter",
-        "url": {}
-      }
-    ],
-    "date": "2021-08-10",
-    "categories": [],
-    "contents": "\nThe Big Bad Math Monster\nAs I begin my Master’s in Environmental Data Science, I am both relieved and somewhat surprised to find that something like 23 of my 25 classmates are just as out of practice (read: afraid) of the amount of math we will need to recall from the dusty annals of high school as I am. I haven’t taken calculus in something like 7 years, and personally I never saw much similarity between calculus and riding a bike. Add to this the fact that the MEDS intensive summer program aims to teach a 2 credit course covering all the basics of math required for our degree in the span of 5 days, including all of calculus in 1.5 days, and everyone but the mathlete lifers will understand my trepidation.\nR to the Rescue\nMy saving grace during the time-warp of numbers and variables that was last week was the fact that I am, despite all appearances, not actually here to learn math. Instead, I am learning Data Science, which is a fancy way of saying that I get a computer to do all the scary math for me. A smattering of experience in R from my time as an undergrad at Tufts University has been just enough to keep me abreast of the tsunami of information that will continue to be my summer. Though I am gaining familiarity with Python, most of our time in class is spent in RStudio learning how (in my eyes) to return to my blissful math-free youth while inexplicably pursuing a career in Data Science. And that brings us to the ode() function in the deSolve package.\ndeSolve\ndeSolve is a handy package created by Thomas Petzoldt, Karline Soetaert, Rhyne Setzer, and others with the intended (and achieved) purpose of ordinary differential equations, partial differential equations, differential algebraic equations, and delay differential equations. A reader who knows what all of those things are is probably not very impressed with this functionality, but for anyone out there (like myself) who has perhaps never heard of a delay differential equation, this package has the potential to save months of confused Googling and the ever-present danger of a miswritten calculation - or at least will save the pride you would otherwise be swallowing to request the help of that one friend who inexplicably does this stuff for fun.\node()\nWithout getting too deep into the weeds, I’d like to take the time to cover the simplest of deSolve’s functions, ode().\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-08-17T12:02:44-07:00",
-    "input_file": {}
   }
 ]

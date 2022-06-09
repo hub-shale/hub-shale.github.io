@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2022-06-08-bias-in-gender-data-beyond-the-binary/",
+    "title": "Bias in Gender Data: Beyond the Binary",
+    "description": "A follow-up on the issues underlying inadequate data in a previous post.",
+    "author": [
+      {
+        "name": "Shale Hunter",
+        "url": {}
+      }
+    ],
+    "date": "2022-06-08",
+    "categories": [],
+    "contents": "\n\nContents\nLast December, I wrote this article on identifying grading bias in an undergraduate course I was TAing at the time. Though I did not discover any grading bias in the data, one of the limitations I identified then has stuck with me, and I would like to take the time to explore it in more detail in this post.\nWhat’s Missing?\nPotential Causes of\nEffects of\nWays to Combat\n\nLast December, I wrote this article on identifying grading bias in an undergraduate course I was TAing at the time. Though I did not discover any grading bias in the data, one of the limitations I identified then has stuck with me, and I would like to take the time to explore it in more detail in this post.\nWhat’s Missing?\nHere is a summary of the pronouns column from the dataset used in my previous analysis:\n\n\nhide\n\ndata_clean = read.csv(here(\"_posts/2021-12-01-grade-bias-analysis/grading_bias_data_clean.csv\"))\n\nst = data_clean %>% count(pronouns)\n  \ncolnames(st) = c(\"Pronouns\", \"Number of Students\")\nst[1,1] = NA\n\ngt::gt(st)\n\n\n\nPronouns\n      Number of Students\n    NA\n126He/Him/His\n62She/Her/Hers\n38They/Them/Theirs\n3\n\nThere are (at least) two clear issues highlighted by this table:\nOnly 3 of the 229 students in the class reported using the pronouns They/Them/Theirs\nMore than half of students in the class did not share their pronouns on their page in UCSB’s student database\nAnyone reading this post as a data scientist will immediately be able to identify the statistical limitations of a dataset with over 50% NA values and variable with a category that is almost completely unrepresented. However in this article I would like to take a deeper look at the underlying causes that forced me to use such an inadequate data source in the first place.\nPotential Causes of\nEffects of\nWays to Combat\n\n\n\n",
+    "preview": {},
+    "last_modified": "2022-06-08T16:25:26-07:00",
+    "input_file": "bias-in-gender-data-beyond-the-binary.knit.md"
+  },
+  {
     "path": "posts/2021-12-01-grade-bias-analysis/",
     "title": "Grade Bias Analysis",
     "description": "A statistical analysis of grading bias for TAs in a UCSB Art History course.",

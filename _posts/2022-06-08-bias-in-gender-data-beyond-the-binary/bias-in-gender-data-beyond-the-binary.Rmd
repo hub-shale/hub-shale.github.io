@@ -1,0 +1,90 @@
+---
+title: "Bias in Gender Data: Beyond the Binary"
+description: |
+  A follow-up on the issues underlying inadequate data in a previous post.
+author: "Shale Hunter"
+date: "2022-06-08"
+draft: true
+output:
+  distill::distill_article:
+    code_folding: hide
+    toc: yes
+    toc_float: true
+    self_contained: false
+  html_document:
+    code_folding: hide
+    toc: yes
+    toc_float: true
+  pdf_document: 
+    toc: yes
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(here)
+library(dplyr)
+```
+
+
+### Last December, I wrote [this](https://hub-shale.github.io/posts/2021-12-01-grade-bias-analysis/) article on identifying grading bias in an undergraduate course I was TAing at the time. Though I did not discover any *grading* bias in the data, one of the limitations I identified then has stuck with me, and I would like to take the time to explore it in more detail in this post.
+
+# What's Missing?
+
+Here is a summary of the `pronouns` column from the dataset used in my previous analysis:
+
+```{r}
+data_clean = read.csv(here("_posts/2021-12-01-grade-bias-analysis/grading_bias_data_clean.csv"))
+
+st = data_clean %>% count(pronouns)
+  
+colnames(st) = c("Pronouns", "Number of Students")
+st[1,1] = NA
+
+gt::gt(st)
+```
+
+There are two clear issues highlighted by this table:
+
+- Only 3 of the 229 students in the class reported using the pronouns `They/Them/Theirs`
+- More than half of students in the class did not share their pronouns on their page in UCSB's student database
+
+Anyone reading this post as a data scientist will immediately be able to identify the statistical limitations of a dataset with over 50% `NA` values and variable with a category that is almost completely unrepresented. However in this article I would like to take a deeper look at the underlying causes that forced me to use such an inadequate data source in the first place. 
+
+
+# A Review of Potential Causes for Biased Data in SGM Research
+
+While perhaps not quite yet mainstream, research on Sexual and Gender Minorities (SGM) is a field that is growing rapidly as we are discovering the many ways that identifying with a marginalized group can have harmful effects on a person's life because of real or assumed discrimination from broader society. This is exceptionally true in the medical field, but certainly is not limited to it. 
+
+At the same time we are trying to understand and combat the unique challenges faced by SGM individuals and communities, these same people are much more likely to mistrust authorities of all kinds. From  doctors advocating for conversion therapy to [openly transphobic members of UCSB itself](https://dailynexus.com/2019-07-02/ucsb-teaching-assistant-under-fire-from-colleagues-students-for-transphobic-tweets/), there is a massive deficit of trust between the LGBTQ+ community and institutional power. Lunn et al. (2019) describes this phenomenon in relation to clinical research:
+
+- “With stigmatizing, discriminatory, or dangerous experiences in society, health care, or investigational communities, potential participant interactions with the health care system and traditional research enterprise may be limited out of fear.”
+
+This is known to be true not only in SGM research broadly, but also specifically in relation to college students, the target demographic of my own dataset. Women who have sex with women (WSW) have been shown to have significantly higher rates of eating disorders compared to women who have sex with men (WSM) in the university setting (Von Schell et al. 2018). The same study found that the observed rate of eating disorders in WSW was consistent with the observed rate in existing literature on eating disorders - indicative of the historical exclusion of SGM people in the field.
+
+Even in my own graduate-level classes at the Bren School, I have noticed a disturbing affinity for the gender binary in teaching examples: while not explicitly discriminatory, it is the kind of unintentional, unexamined microaggression which quietly invalidates nonbinary students' identity, and with it erodes their trust in the institution our faculty represent.
+
+# Effects of Bias in SGM Data
+
+With this combination of a historical lack of effort on researchers' part to safely and respectfully gather data on minority groups and the ensuing lack of trust between these groups and researchers, it should not be surprising that we can see a clear bias in much of the data that purports to be applicable to SGM people. A review of 43 publicly accessible national, international, and regional data sources on gender and health found that only 14% measured all three dimensions of sexual orientation (identity, behavior, attraction), and no data sources measured transgender-inclusive gender identity (Patterson et al. 2017).
+
+There also remains substantial misunderstanding of SGM people even among those researchers who are trying to ensure that data collection and use is being done in an ethical and responsible way: Norori et al. (2021) describe non-heterosexual women as "generally higher socioeconomic status than heterosexual women" with hardly a thought for the reality underlying whatever data supports this claim. It may be true that a survey of women (or any gender identity) would find a correlation between sexual orientation and socioeconomic status; but treating this data as fact as Norori does is likely a grave mistake. A more accurate phrasing would be: "women who *describe themselves* as non-heterosexual have higher socioeconomic status" - where the likely explanation is that wealthy and highly educated individuals have the **privilege** of expressing their sexual or gender identity openly in a way that less wealthy or educated individuals may not have because of familial, religious, or other practical restrictions on their ability to live openly (which extends to medical surveys).
+
+The 
+
+# Ways to Combat
+
+
+
+## References
+
+- Lunn, M. R., Capriotti, M. R., Flentje, A., Bibbins-Domingo, K., Pletcher, M. J., Triano, A. J., Sooksaman, C., Frazier, J., & Obedin-Maliver, J. (2019). Using mobile technology to engage sexual and gender minorities in clinical research. PLoS ONE, 14(5), e0216282–e0216282. https://doi.org/10.1371/journal.pone.0216282
+- Macapagal, K., Coventry, R., Arbeit, M. R., Fisher, C. B., & Mustanski, B. (2016). “I Won’t Out Myself Just to Do a Survey”: Sexual and Gender Minority Adolescents’ Perspectives on the Risks and Benefits of Sex Research. Archives of Sexual Behavior, 46(5), 1393–1409. https://doi.org/10.1007/s10508-016-0784-5
+- May, A., Wachs, J., & Hannák, A. (2019). Gender differences in participation and reward on Stack Overflow. Empirical Software Engineering : An International Journal, 24(4), 1997–2019. https://doi.org/10.1007/s10664-019-09685-x
+- Norori, N., Hu, Q., Aellen, F. M., Faraci, F. D., & Tzovara, A. (2021). Addressing bias in big data and AI for health care: A call for open science. Patterns (New York, N.Y.), 2(10), 100347–100347. https://doi.org/10.1016/j.patter.2021.100347
+- Patterson, J. G., Jabson, J. M., & Bowen, D. J. (2017). Measuring Sexual and Gender Minority Populations in Health Surveillance. LGBT Health, 4(2), 82–105. https://doi.org/10.1089/lgbt.2016.0026
+- Spizzirri, G., Eufrásio, R., Lima, M.C.P. et al. Proportion of people identified as transgender and non-binary gender in Brazil. Sci Rep 11, 2240 (2021). https://doi.org/10.1038/s41598-021-81411-4
+- Suen, L. W., Lunn, M. R., Sevelius, J. M., Flentje, A., Capriotti, M. R., Lubensky, M. E., Hunt, C., Weber, S., Bahati, M., Rescate, A., Dastur, Z., & Obedin-Maliver, J. (2022). Do Ask, Tell, and Show: Contextual Factors Affecting Sexual Orientation and Gender Identity Disclosure for Sexual and Gender Minority People. LGBT Health, 9(2), 73–80. https://doi.org/10.1089/lgbt.2021.0159
+- Von Schell, A., Ohrt, T. K., Bruening, A. B., Perez, M., & Link to external site,  this link will open in a new window. (2018). Rates of disordered eating behaviors across sexual minority undergraduate men and women. Psychology of Sexual Orientation and Gender Diversity, 5(3), 352–359. https://doi.org/10.1037/sgd0000278
+
+

@@ -4,19 +4,18 @@ description: |
   A follow-up on the issues underlying inadequate data in a previous post.
 author: "Shale Hunter"
 date: "2022-06-08"
-draft: true
 output:
   distill::distill_article:
     code_folding: hide
-    toc: yes
+    toc: no
     toc_float: true
     self_contained: false
   html_document:
     code_folding: hide
-    toc: yes
+    toc: no
     toc_float: true
   pdf_document: 
-    toc: yes
+    toc: no
 ---
 
 
@@ -66,15 +65,33 @@ Even in my own graduate-level classes at the Bren School, I have noticed a distu
 
 # Effects of Bias in SGM Data
 
-With this combination of a historical lack of effort on researchers' part to safely and respectfully gather data on minority groups and the ensuing lack of trust between these groups and researchers, it should not be surprising that we can see a clear bias in much of the data that purports to be applicable to SGM people. A review of 43 publicly accessible national, international, and regional data sources on gender and health found that only 14% measured all three dimensions of sexual orientation (identity, behavior, attraction), and no data sources measured transgender-inclusive gender identity (Patterson et al. 2017).
+With this combination of a historical lack of effort on researchers' part to safely and respectfully gather data on minority groups and the ensuing lack of trust between these groups and researchers, it should not be surprising that we can see a clear bias in much of the data that purports to be applicable to SGM people. A review of 43 publicly accessible national, international, and regional data sources on gender and health found that only 14% measured all three dimensions of sexual orientation (identity, behavior, attraction), and no data sources measured transgender-inclusive gender identity (Patterson et al. 2017). Norori et al. (2021) likewise suggest that implicit or explicit biases of research personnel towards SGM individuals can affect data and metadata legitimacy as well as diagnosis accuracy; this is corroborated in Suen et al. (2022), where interviews with SGM focus groups indicated that in-person (as opposed to online or over the phone) is the most uncomfortable, least safe-feeling means of data collection, often because of perceived judgement on the part of the researcher or medical professional. 
 
-There also remains substantial misunderstanding of SGM people even among those researchers who are trying to ensure that data collection and use is being done in an ethical and responsible way: Norori et al. (2021) describe non-heterosexual women as "generally higher socioeconomic status than heterosexual women" with hardly a thought for the reality underlying whatever data supports this claim. It may be true that a survey of women (or any gender identity) would find a correlation between sexual orientation and socioeconomic status; but treating this data as fact as Norori does is likely a grave mistake. A more accurate phrasing would be: "women who *describe themselves* as non-heterosexual have higher socioeconomic status" - where the likely explanation is that wealthy and highly educated individuals have the **privilege** of expressing their sexual or gender identity openly in a way that less wealthy or educated individuals may not have because of familial, religious, or other practical restrictions on their ability to live openly (which extends to medical surveys).
+There also remains substantial misunderstanding of SGM people even among those researchers who are trying to ensure that data collection and use is being done in an ethical and responsible way: Norori et al. (2021) describe non-heterosexual women as "generally higher socioeconomic status than heterosexual women" with hardly a thought for the reality underlying whatever data supports this claim. It may be true that a survey of women (or any gender identity) would find a correlation between sexual orientation and socioeconomic status; but treating this data as fact as Norori does is likely a grave mistake. A more accurate phrasing would be: "women who *describe themselves* as non-heterosexual have higher socioeconomic status" - where the likely explanation is that wealthy and highly educated individuals have the **privilege** of expressing their sexual or gender identity openly in a way that less wealthy or educated individuals may not have because of familial, religious, or other practical restrictions on their ability to live openly (which extends to medical surveys). An extreme version of this is children under 18, most of whom report that they wouldn't participate in SGM research or surveys at all if it required parental consent (Macapagal et al. 2016).
 
-The 
+All this is to say that the problem encountered in my data is not unique - but how can we as researchers ensure that the data we *do* collect is unbiased, complete, and respectful of its contributors?
 
-# Ways to Combat
+# Ways to Combat Bias in SGM Research
 
+Several approaches have been taken to try and improve SGM data from an ethics and bias perspective. Interviews and focus groups like those described in Suen et al. (2022) offer a means for SGM individuals to express their own concerns directly to the organizers of future research, with the goal of modifying methods to reflect the unique needs of the population. This also helps avoid the problem of non-SGM research personnel making the mistake of thinking they know best when it comes to what makes someone with a marginalized identity feel more or less comfortable in a research setting.
 
+Another approach is described in Lunn et al. (2019): the PRIDE Study (Population Research in Identity and Disparities for Equality) is a longitudinal SGM research project based out of Stanford that takes advantage of the well-documented preference in the SGM community for remote interaction with researchers by developing a mobile application to complete surveys and give feedback on research topics and methodologies. Using this approach allowed 16,394 SGM respondents (98% sexual minority, 15% gender minority) from a range of geographic and demographic groups in the US to safely and comfortably provide 3,544 suggested important SGM health topics, complete 24,022 surveys, and use of forum and voting features to share opinions on the methods and functionality of the app itself.
+
+Finally, our responsibility in relation to the biases discovered in SGM data is not just as researchers, but also as educators. The data science and R communities have made progress in addressing other types of latent injustices through the replacement of [problematic datasets](https://www.meganstodel.com/posts/no-to-iris/) with better ones. There is certainly room for such a solution in SGM data education: with the limitations of current data sources clearly highlighted by reviews such as Patterson et al. (2017), new teaching data files with complete gender information would be an invaluable tool both in service of the demarginalization of diverse gender identities and education of the broader population.
+
+# Final Thoughts
+
+In the end, the only way to ensure researchers are collecting unbiased and complete data about our SGM community is by ensuring that the community feels safe providing their data as well as that the data is collected in a way that benefits that community. More than 25% of SGM respondents to one survey said of this kind of research: “I don’t need anything in return. I will keep participating to improve LGBTQ health” (Lunn et al. 2019). 
+
+Even so, we have a long way to go before this is broadly achieved in the US, let alone the world. Even in a highly educated liberal institution like USCB there remain barriers to unbiased SGM data collection, as evidenced by my own experience with data collection:
+
+```{r}
+gt::gt(st)
+```
+
+Even here there appears to be some level of apathy or lack of respect for the importance of gender identity in the student body as a whole. And it remains difficult to ascertain exactly how much peer, faculty, or institutional judgement is affecting SGM individuals' willingness to share their identity on school platforms such as the on I used to collect data for my project last winter. Spizzirri et al. (2021) report global estimations of gender-diverse individuals between 0.1 to 2% of the population, which my proportion of 3/229  students (1.3%) would be consistent with. However, Lunn et al. (2019) report over 15% gender minority in their sample - of course this is a sample that is specifically targeting the LGBTQ+ community and would be expected to be greater than the overall population. But there remains a concern that the true proportion is higher than the 2% upper bound of observed gender minorities because of of real and persistent stigmas relating to non-standard gender identities.
+
+Regardless of what the true proportion is, it is important that research methods take into account the many ways in which SGM populations have been mistreated in the past, and how that mistreatment affects current relationships between data collector and data contributor. Hopefully then I will be able to **really** get a complete and unbiased estimation of my objectivity as a grader!
 
 ## References
 
@@ -85,6 +102,6 @@ The
 - Patterson, J. G., Jabson, J. M., & Bowen, D. J. (2017). Measuring Sexual and Gender Minority Populations in Health Surveillance. LGBT Health, 4(2), 82–105. https://doi.org/10.1089/lgbt.2016.0026
 - Spizzirri, G., Eufrásio, R., Lima, M.C.P. et al. Proportion of people identified as transgender and non-binary gender in Brazil. Sci Rep 11, 2240 (2021). https://doi.org/10.1038/s41598-021-81411-4
 - Suen, L. W., Lunn, M. R., Sevelius, J. M., Flentje, A., Capriotti, M. R., Lubensky, M. E., Hunt, C., Weber, S., Bahati, M., Rescate, A., Dastur, Z., & Obedin-Maliver, J. (2022). Do Ask, Tell, and Show: Contextual Factors Affecting Sexual Orientation and Gender Identity Disclosure for Sexual and Gender Minority People. LGBT Health, 9(2), 73–80. https://doi.org/10.1089/lgbt.2021.0159
-- Von Schell, A., Ohrt, T. K., Bruening, A. B., Perez, M., & Link to external site,  this link will open in a new window. (2018). Rates of disordered eating behaviors across sexual minority undergraduate men and women. Psychology of Sexual Orientation and Gender Diversity, 5(3), 352–359. https://doi.org/10.1037/sgd0000278
+- Von Schell, A., Ohrt, T. K., Bruening, A. B., Perez, M. (2018). Rates of disordered eating behaviors across sexual minority undergraduate men and women. Psychology of Sexual Orientation and Gender Diversity, 5(3), 352–359. https://doi.org/10.1037/sgd0000278
 
 

@@ -114,12 +114,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Bias in Gender Data: Beyond the Binary"]},{"type":"character","attributes":{},"value":["A follow-up on the issues underlying inadequate data in a previous post."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Shale Hunter"]}]}]},{"type":"character","attributes":{},"value":["2022-06-08"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article","html_document","pdf_document"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["code_folding","toc","toc_float","self_contained"]}},"value":[{"type":"character","attributes":{},"value":["hide"]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[false]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["code_folding","toc","toc_float"]}},"value":[{"type":"character","attributes":{},"value":["hide"]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc"]}},"value":[{"type":"logical","attributes":{},"value":[true]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Bias in Gender Data: Beyond the Binary"]},{"type":"character","attributes":{},"value":["A follow-up on the issues underlying inadequate data in a previous post."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Shale Hunter"]}]}]},{"type":"character","attributes":{},"value":["2022-06-08"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article","html_document","pdf_document"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["code_folding","toc","toc_float","self_contained"]}},"value":[{"type":"character","attributes":{},"value":["hide"]},{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[false]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["code_folding","toc","toc_float"]}},"value":[{"type":"character","attributes":{},"value":["hide"]},{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["bias-in-gender-data-beyond-the-binary_files/anchor-4.2.2/anchor.min.js","bias-in-gender-data-beyond-the-binary_files/bowser-1.9.3/bowser.min.js","bias-in-gender-data-beyond-the-binary_files/distill-2.2.21/template.v2.js","bias-in-gender-data-beyond-the-binary_files/header-attrs-2.13/header-attrs.js","bias-in-gender-data-beyond-the-binary_files/jquery-3.6.0/jquery-3.6.0.js","bias-in-gender-data-beyond-the-binary_files/jquery-3.6.0/jquery-3.6.0.min.js","bias-in-gender-data-beyond-the-binary_files/jquery-3.6.0/jquery-3.6.0.min.map","bias-in-gender-data-beyond-the-binary_files/popper-2.6.0/popper.min.js","bias-in-gender-data-beyond-the-binary_files/tippy-6.2.7/tippy-bundle.umd.min.js","bias-in-gender-data-beyond-the-binary_files/tippy-6.2.7/tippy-light-border.css","bias-in-gender-data-beyond-the-binary_files/tippy-6.2.7/tippy.css","bias-in-gender-data-beyond-the-binary_files/tippy-6.2.7/tippy.umd.min.js","bias-in-gender-data-beyond-the-binary_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2445,18 +2445,6 @@ d-appendix d-footnote-list a.footnote-backlink {
 </div>
 
 <div class="d-article">
-<div class="d-contents d-contents-float">
-<nav class="l-text toc figcaption" id="TOC">
-<h3>Contents</h3>
-<ul>
-<li><a href="#last-december-i-wrote-this-article-on-identifying-grading-bias-in-an-undergraduate-course-i-was-taing-at-the-time.-though-i-did-not-discover-any-grading-bias-in-the-data-one-of-the-limitations-i-identified-then-has-stuck-with-me-and-i-would-like-to-take-the-time-to-explore-it-in-more-detail-in-this-post.">Last December, I wrote <span>this</span> article on identifying grading bias in an undergraduate course I was TAing at the time. Though I did not discover any <em>grading</em> bias in the data, one of the limitations I identified then has stuck with me, and I would like to take the time to explore it in more detail in this post.</a></li>
-<li><a href="#whats-missing">What’s Missing?</a></li>
-<li><a href="#potential-causes-of">Potential Causes of</a></li>
-<li><a href="#effects-of">Effects of</a></li>
-<li><a href="#ways-to-combat">Ways to Combat</a></li>
-</ul>
-</nav>
-</div>
 <h3 id="last-december-i-wrote-this-article-on-identifying-grading-bias-in-an-undergraduate-course-i-was-taing-at-the-time.-though-i-did-not-discover-any-grading-bias-in-the-data-one-of-the-limitations-i-identified-then-has-stuck-with-me-and-i-would-like-to-take-the-time-to-explore-it-in-more-detail-in-this-post.">Last December, I wrote <a href="https://hub-shale.github.io/posts/2021-12-01-grade-bias-analysis/">this</a> article on identifying grading bias in an undergraduate course I was TAing at the time. Though I did not discover any <em>grading</em> bias in the data, one of the limitations I identified then has stuck with me, and I would like to take the time to explore it in more detail in this post.</h3>
 <h1 id="whats-missing">What’s Missing?</h1>
 <p>Here is a summary of the <code>pronouns</code> column from the dataset used in my previous analysis:</p>
@@ -2477,12 +2465,12 @@ hide
 </code></pre>
 </div>
 </details>
-<div id="zdsfmqkbmz" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="mlcsatfsgg" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#zdsfmqkbmz .gt_table {
+#mlcsatfsgg .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -2507,7 +2495,7 @@ hide
   border-left-color: #D3D3D3;
 }
 
-#zdsfmqkbmz .gt_heading {
+#mlcsatfsgg .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2519,7 +2507,7 @@ hide
   border-right-color: #D3D3D3;
 }
 
-#zdsfmqkbmz .gt_title {
+#mlcsatfsgg .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2531,7 +2519,7 @@ hide
   border-bottom-width: 0;
 }
 
-#zdsfmqkbmz .gt_subtitle {
+#mlcsatfsgg .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2543,13 +2531,13 @@ hide
   border-top-width: 0;
 }
 
-#zdsfmqkbmz .gt_bottom_border {
+#mlcsatfsgg .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zdsfmqkbmz .gt_col_headings {
+#mlcsatfsgg .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2564,7 +2552,7 @@ hide
   border-right-color: #D3D3D3;
 }
 
-#zdsfmqkbmz .gt_col_heading {
+#mlcsatfsgg .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2584,7 +2572,7 @@ hide
   overflow-x: hidden;
 }
 
-#zdsfmqkbmz .gt_column_spanner_outer {
+#mlcsatfsgg .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2596,15 +2584,15 @@ hide
   padding-right: 4px;
 }
 
-#zdsfmqkbmz .gt_column_spanner_outer:first-child {
+#mlcsatfsgg .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zdsfmqkbmz .gt_column_spanner_outer:last-child {
+#mlcsatfsgg .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zdsfmqkbmz .gt_column_spanner {
+#mlcsatfsgg .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2616,7 +2604,7 @@ hide
   width: 100%;
 }
 
-#zdsfmqkbmz .gt_group_heading {
+#mlcsatfsgg .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2641,7 +2629,7 @@ hide
   vertical-align: middle;
 }
 
-#zdsfmqkbmz .gt_empty_group_heading {
+#mlcsatfsgg .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2656,15 +2644,15 @@ hide
   vertical-align: middle;
 }
 
-#zdsfmqkbmz .gt_from_md > :first-child {
+#mlcsatfsgg .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zdsfmqkbmz .gt_from_md > :last-child {
+#mlcsatfsgg .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zdsfmqkbmz .gt_row {
+#mlcsatfsgg .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2683,7 +2671,7 @@ hide
   overflow-x: hidden;
 }
 
-#zdsfmqkbmz .gt_stub {
+#mlcsatfsgg .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2696,7 +2684,7 @@ hide
   padding-right: 5px;
 }
 
-#zdsfmqkbmz .gt_stub_row_group {
+#mlcsatfsgg .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2710,11 +2698,11 @@ hide
   vertical-align: top;
 }
 
-#zdsfmqkbmz .gt_row_group_first td {
+#mlcsatfsgg .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#zdsfmqkbmz .gt_summary_row {
+#mlcsatfsgg .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2724,16 +2712,16 @@ hide
   padding-right: 5px;
 }
 
-#zdsfmqkbmz .gt_first_summary_row {
+#mlcsatfsgg .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#zdsfmqkbmz .gt_first_summary_row.thick {
+#mlcsatfsgg .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#zdsfmqkbmz .gt_last_summary_row {
+#mlcsatfsgg .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2743,7 +2731,7 @@ hide
   border-bottom-color: #D3D3D3;
 }
 
-#zdsfmqkbmz .gt_grand_summary_row {
+#mlcsatfsgg .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2753,7 +2741,7 @@ hide
   padding-right: 5px;
 }
 
-#zdsfmqkbmz .gt_first_grand_summary_row {
+#mlcsatfsgg .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2763,11 +2751,11 @@ hide
   border-top-color: #D3D3D3;
 }
 
-#zdsfmqkbmz .gt_striped {
+#mlcsatfsgg .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zdsfmqkbmz .gt_table_body {
+#mlcsatfsgg .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2776,7 +2764,7 @@ hide
   border-bottom-color: #D3D3D3;
 }
 
-#zdsfmqkbmz .gt_footnotes {
+#mlcsatfsgg .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2790,7 +2778,7 @@ hide
   border-right-color: #D3D3D3;
 }
 
-#zdsfmqkbmz .gt_footnote {
+#mlcsatfsgg .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -2799,7 +2787,7 @@ hide
   padding-right: 5px;
 }
 
-#zdsfmqkbmz .gt_sourcenotes {
+#mlcsatfsgg .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2813,7 +2801,7 @@ hide
   border-right-color: #D3D3D3;
 }
 
-#zdsfmqkbmz .gt_sourcenote {
+#mlcsatfsgg .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2821,36 +2809,36 @@ hide
   padding-right: 5px;
 }
 
-#zdsfmqkbmz .gt_left {
+#mlcsatfsgg .gt_left {
   text-align: left;
 }
 
-#zdsfmqkbmz .gt_center {
+#mlcsatfsgg .gt_center {
   text-align: center;
 }
 
-#zdsfmqkbmz .gt_right {
+#mlcsatfsgg .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zdsfmqkbmz .gt_font_normal {
+#mlcsatfsgg .gt_font_normal {
   font-weight: normal;
 }
 
-#zdsfmqkbmz .gt_font_bold {
+#mlcsatfsgg .gt_font_bold {
   font-weight: bold;
 }
 
-#zdsfmqkbmz .gt_font_italic {
+#mlcsatfsgg .gt_font_italic {
   font-style: italic;
 }
 
-#zdsfmqkbmz .gt_super {
+#mlcsatfsgg .gt_super {
   font-size: 65%;
 }
 
-#zdsfmqkbmz .gt_two_val_uncert {
+#mlcsatfsgg .gt_two_val_uncert {
   display: inline-block;
   line-height: 1em;
   text-align: right;
@@ -2859,31 +2847,31 @@ hide
   margin-left: 0.1em;
 }
 
-#zdsfmqkbmz .gt_footnote_marks {
+#mlcsatfsgg .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#zdsfmqkbmz .gt_asterisk {
+#mlcsatfsgg .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#zdsfmqkbmz .gt_slash_mark {
+#mlcsatfsgg .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#zdsfmqkbmz .gt_fraction_numerator {
+#mlcsatfsgg .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#zdsfmqkbmz .gt_fraction_denominator {
+#mlcsatfsgg .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -2912,15 +2900,489 @@ hide
 </table>
 </div>
 </div>
-<p>There are (at least) two clear issues highlighted by this table:</p>
+<p>There are two clear issues highlighted by this table:</p>
 <ul>
 <li>Only 3 of the 229 students in the class reported using the pronouns <code>They/Them/Theirs</code></li>
 <li>More than half of students in the class did not share their pronouns on their page in UCSB’s student database</li>
 </ul>
 <p>Anyone reading this post as a data scientist will immediately be able to identify the statistical limitations of a dataset with over 50% <code>NA</code> values and variable with a category that is almost completely unrepresented. However in this article I would like to take a deeper look at the underlying causes that forced me to use such an inadequate data source in the first place.</p>
-<h1 id="potential-causes-of">Potential Causes of</h1>
-<h1 id="effects-of">Effects of</h1>
-<h1 id="ways-to-combat">Ways to Combat</h1>
+<h1 id="a-review-of-potential-causes-for-biased-data-in-sgm-research">A Review of Potential Causes for Biased Data in SGM Research</h1>
+<p>While perhaps not quite yet mainstream, research on Sexual and Gender Minorities (SGM) is a field that is growing rapidly as we are discovering the many ways that identifying with a marginalized group can have harmful effects on a person’s life because of real or assumed discrimination from broader society. This is exceptionally true in the medical field, but certainly is not limited to it.</p>
+<p>At the same time we are trying to understand and combat the unique challenges faced by SGM individuals and communities, these same people are much more likely to mistrust authorities of all kinds. From doctors advocating for conversion therapy to <a href="https://dailynexus.com/2019-07-02/ucsb-teaching-assistant-under-fire-from-colleagues-students-for-transphobic-tweets/">openly transphobic members of UCSB itself</a>, there is a massive deficit of trust between the LGBTQ+ community and institutional power. Lunn et al. (2019) describes this phenomenon in relation to clinical research:</p>
+<ul>
+<li>“With stigmatizing, discriminatory, or dangerous experiences in society, health care, or investigational communities, potential participant interactions with the health care system and traditional research enterprise may be limited out of fear.”</li>
+</ul>
+<p>This is known to be true not only in SGM research broadly, but also specifically in relation to college students, the target demographic of my own dataset. Women who have sex with women (WSW) have been shown to have significantly higher rates of eating disorders compared to women who have sex with men (WSM) in the university setting (Von Schell et al. 2018). The same study found that the observed rate of eating disorders in WSW was consistent with the observed rate in existing literature on eating disorders - indicative of the historical exclusion of SGM people in the field.</p>
+<p>Even in my own graduate-level classes at the Bren School, I have noticed a disturbing affinity for the gender binary in teaching examples: while not explicitly discriminatory, it is the kind of unintentional, unexamined microaggression which quietly invalidates nonbinary students’ identity, and with it erodes their trust in the institution our faculty represent.</p>
+<h1 id="effects-of-bias-in-sgm-data">Effects of Bias in SGM Data</h1>
+<p>With this combination of a historical lack of effort on researchers’ part to safely and respectfully gather data on minority groups and the ensuing lack of trust between these groups and researchers, it should not be surprising that we can see a clear bias in much of the data that purports to be applicable to SGM people. A review of 43 publicly accessible national, international, and regional data sources on gender and health found that only 14% measured all three dimensions of sexual orientation (identity, behavior, attraction), and no data sources measured transgender-inclusive gender identity (Patterson et al. 2017). Norori et al. (2021) likewise suggest that implicit or explicit biases of research personnel towards SGM individuals can affect data and metadata legitimacy as well as diagnosis accuracy; this is corroborated in Suen et al. (2022), where interviews with SGM focus groups indicated that in-person (as opposed to online or over the phone) is the most uncomfortable, least safe-feeling means of data collection, often because of perceived judgement on the part of the researcher or medical professional.</p>
+<p>There also remains substantial misunderstanding of SGM people even among those researchers who are trying to ensure that data collection and use is being done in an ethical and responsible way: Norori et al. (2021) describe non-heterosexual women as “generally higher socioeconomic status than heterosexual women” with hardly a thought for the reality underlying whatever data supports this claim. It may be true that a survey of women (or any gender identity) would find a correlation between sexual orientation and socioeconomic status; but treating this data as fact as Norori does is likely a grave mistake. A more accurate phrasing would be: “women who <em>describe themselves</em> as non-heterosexual have higher socioeconomic status” - where the likely explanation is that wealthy and highly educated individuals have the <strong>privilege</strong> of expressing their sexual or gender identity openly in a way that less wealthy or educated individuals may not have because of familial, religious, or other practical restrictions on their ability to live openly (which extends to medical surveys). An extreme version of this is children under 18, most of whom report that they wouldn’t participate in SGM research or surveys at all if it required parental consent (Macapagal et al. 2016).</p>
+<p>All this is to say that the problem encountered in my data is not unique - but how can we as researchers ensure that the data we <em>do</em> collect is unbiased, complete, and respectful of its contributors?</p>
+<h1 id="ways-to-combat-bias-in-sgm-research">Ways to Combat Bias in SGM Research</h1>
+<p>Several approaches have been taken to try and improve SGM data from an ethics and bias perspective. Interviews and focus groups like those described in Suen et al. (2022) offer a means for SGM individuals to express their own concerns directly to the organizers of future research, with the goal of modifying methods to reflect the unique needs of the population. This also helps avoid the problem of non-SGM research personnel making the mistake of thinking they know best when it comes to what makes someone with a marginalized identity feel more or less comfortable in a research setting.</p>
+<p>Another approach is described in Lunn et al. (2019): the PRIDE Study (Population Research in Identity and Disparities for Equality) is a longitudinal SGM research project based out of Stanford that takes advantage of the well-documented preference in the SGM community for remote interaction with researchers by developing a mobile application to complete surveys and give feedback on research topics and methodologies. Using this approach allowed 16,394 SGM respondents (98% sexual minority, 15% gender minority) from a range of geographic and demographic groups in the US to safely and comfortably provide 3,544 suggested important SGM health topics, complete 24,022 surveys, and use of forum and voting features to share opinions on the methods and functionality of the app itself.</p>
+<p>Finally, our responsibility in relation to the biases discovered in SGM data is not just as researchers, but also as educators. The data science and R communities have made progress in addressing other types of latent injustices through the replacement of <a href="https://www.meganstodel.com/posts/no-to-iris/">problematic datasets</a> with better ones. There is certainly room for such a solution in SGM data education: with the limitations of current data sources clearly highlighted by reviews such as Patterson et al. (2017), new teaching data files with complete gender information would be an invaluable tool both in service of the demarginalization of diverse gender identities and education of the broader population.</p>
+<h1 id="final-thoughts">Final Thoughts</h1>
+<p>In the end, the only way to ensure researchers are collecting unbiased and complete data about our SGM community is by ensuring that the community feels safe providing their data as well as that the data is collected in a way that benefits that community. More than 25% of SGM respondents to one survey said of this kind of research: “I don’t need anything in return. I will keep participating to improve LGBTQ health” (Lunn et al. 2019).</p>
+<p>Even so, we have a long way to go before this is broadly achieved in the US, let alone the world. Even in a highly educated liberal institution like USCB there remain barriers to unbiased SGM data collection, as evidenced by my own experience with data collection:</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+hide
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>gt</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/gt/man/gt.html'>gt</a></span><span class='op'>(</span><span class='va'>st</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+<div id="cdermgdjoq" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#cdermgdjoq .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#cdermgdjoq .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cdermgdjoq .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#cdermgdjoq .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#cdermgdjoq .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cdermgdjoq .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cdermgdjoq .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#cdermgdjoq .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#cdermgdjoq .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#cdermgdjoq .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#cdermgdjoq .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#cdermgdjoq .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#cdermgdjoq .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#cdermgdjoq .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#cdermgdjoq .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#cdermgdjoq .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#cdermgdjoq .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cdermgdjoq .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#cdermgdjoq .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#cdermgdjoq .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cdermgdjoq .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#cdermgdjoq .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#cdermgdjoq .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cdermgdjoq .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cdermgdjoq .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#cdermgdjoq .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#cdermgdjoq .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cdermgdjoq .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cdermgdjoq .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cdermgdjoq .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cdermgdjoq .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cdermgdjoq .gt_left {
+  text-align: left;
+}
+
+#cdermgdjoq .gt_center {
+  text-align: center;
+}
+
+#cdermgdjoq .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#cdermgdjoq .gt_font_normal {
+  font-weight: normal;
+}
+
+#cdermgdjoq .gt_font_bold {
+  font-weight: bold;
+}
+
+#cdermgdjoq .gt_font_italic {
+  font-style: italic;
+}
+
+#cdermgdjoq .gt_super {
+  font-size: 65%;
+}
+
+#cdermgdjoq .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
+}
+
+#cdermgdjoq .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#cdermgdjoq .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#cdermgdjoq .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#cdermgdjoq .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#cdermgdjoq .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Pronouns</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">Number of Students</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">NA</td>
+<td class="gt_row gt_right">126</td></tr>
+    <tr><td class="gt_row gt_left">He/Him/His</td>
+<td class="gt_row gt_right">62</td></tr>
+    <tr><td class="gt_row gt_left">She/Her/Hers</td>
+<td class="gt_row gt_right">38</td></tr>
+    <tr><td class="gt_row gt_left">They/Them/Theirs</td>
+<td class="gt_row gt_right">3</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+<p>Even here there appears to be some level of apathy or lack of respect for the importance of gender identity in the student body as a whole. And it remains difficult to ascertain exactly how much peer, faculty, or institutional judgement is affecting SGM individuals’ willingness to share their identity on school platforms such as the on I used to collect data for my project last winter. Spizzirri et al. (2021) report global estimations of gender-diverse individuals between 0.1 to 2% of the population, which my proportion of 3/229 students (1.3%) would be consistent with. However, Lunn et al. (2019) report over 15% gender minority in their sample - of course this is a sample that is specifically targeting the LGBTQ+ community and would be expected to be greater than the overall population. But there remains a concern that the true proportion is higher than the 2% upper bound of observed gender minorities because of of real and persistent stigmas relating to non-standard gender identities.</p>
+<p>Regardless of what the true proportion is, it is important that research methods take into account the many ways in which SGM populations have been mistreated in the past, and how that mistreatment affects current relationships between data collector and data contributor. Hopefully then I will be able to <strong>really</strong> get a complete and unbiased estimation of my objectivity as a grader!</p>
+<h2 id="references">References</h2>
+<ul>
+<li>Lunn, M. R., Capriotti, M. R., Flentje, A., Bibbins-Domingo, K., Pletcher, M. J., Triano, A. J., Sooksaman, C., Frazier, J., &amp; Obedin-Maliver, J. (2019). Using mobile technology to engage sexual and gender minorities in clinical research. PLoS ONE, 14(5), e0216282–e0216282. <a href="https://doi.org/10.1371/journal.pone.0216282" class="uri">https://doi.org/10.1371/journal.pone.0216282</a></li>
+<li>Macapagal, K., Coventry, R., Arbeit, M. R., Fisher, C. B., &amp; Mustanski, B. (2016). “I Won’t Out Myself Just to Do a Survey”: Sexual and Gender Minority Adolescents’ Perspectives on the Risks and Benefits of Sex Research. Archives of Sexual Behavior, 46(5), 1393–1409. <a href="https://doi.org/10.1007/s10508-016-0784-5" class="uri">https://doi.org/10.1007/s10508-016-0784-5</a></li>
+<li>May, A., Wachs, J., &amp; Hannák, A. (2019). Gender differences in participation and reward on Stack Overflow. Empirical Software Engineering : An International Journal, 24(4), 1997–2019. <a href="https://doi.org/10.1007/s10664-019-09685-x" class="uri">https://doi.org/10.1007/s10664-019-09685-x</a></li>
+<li>Norori, N., Hu, Q., Aellen, F. M., Faraci, F. D., &amp; Tzovara, A. (2021). Addressing bias in big data and AI for health care: A call for open science. Patterns (New York, N.Y.), 2(10), 100347–100347. <a href="https://doi.org/10.1016/j.patter.2021.100347" class="uri">https://doi.org/10.1016/j.patter.2021.100347</a></li>
+<li>Patterson, J. G., Jabson, J. M., &amp; Bowen, D. J. (2017). Measuring Sexual and Gender Minority Populations in Health Surveillance. LGBT Health, 4(2), 82–105. <a href="https://doi.org/10.1089/lgbt.2016.0026" class="uri">https://doi.org/10.1089/lgbt.2016.0026</a></li>
+<li>Spizzirri, G., Eufrásio, R., Lima, M.C.P. et al. Proportion of people identified as transgender and non-binary gender in Brazil. Sci Rep 11, 2240 (2021). <a href="https://doi.org/10.1038/s41598-021-81411-4" class="uri">https://doi.org/10.1038/s41598-021-81411-4</a></li>
+<li>Suen, L. W., Lunn, M. R., Sevelius, J. M., Flentje, A., Capriotti, M. R., Lubensky, M. E., Hunt, C., Weber, S., Bahati, M., Rescate, A., Dastur, Z., &amp; Obedin-Maliver, J. (2022). Do Ask, Tell, and Show: Contextual Factors Affecting Sexual Orientation and Gender Identity Disclosure for Sexual and Gender Minority People. LGBT Health, 9(2), 73–80. <a href="https://doi.org/10.1089/lgbt.2021.0159" class="uri">https://doi.org/10.1089/lgbt.2021.0159</a></li>
+<li>Von Schell, A., Ohrt, T. K., Bruening, A. B., Perez, M. (2018). Rates of disordered eating behaviors across sexual minority undergraduate men and women. Psychology of Sexual Orientation and Gender Diversity, 5(3), 352–359. <a href="https://doi.org/10.1037/sgd0000278" class="uri">https://doi.org/10.1037/sgd0000278</a></li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
